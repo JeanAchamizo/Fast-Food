@@ -1,0 +1,6 @@
+/* app-card.component.css */
+.small-card {
+    width: 100%; /* Establece el ancho del card para que ocupe el 100% del espacio disponible */
+    max-width: none; /* Asegura que el card no tenga un ancho máximo */
+    margin: 0; /* Elimina los márgenes predeterminados */
+}

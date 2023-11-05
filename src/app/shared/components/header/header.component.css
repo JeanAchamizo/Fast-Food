@@ -1,0 +1,22 @@
+.mat-toolbar{
+  background-color: #111113;
+  position: fixed;
+}
+
+.mat-toolbar .mat-toolbar-row {
+  justify-content: flex-end;
+}
+
+.mat-toolbar .example-spacer {
+  flex: 1;
+}
+
+.mat-toolbar button {
+  margin-left: 8px;
+  color: #F6EBDD;
+}
+
+.logo{
+  color: #F6EBDD;
+}
+

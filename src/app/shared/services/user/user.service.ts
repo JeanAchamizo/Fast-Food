@@ -20,22 +20,33 @@ export class UserService {
     );
   }
 
-  login(email: string, password: string, userType:boolean): Observable<boolean> {
-    const credentials = { email, password };
-
-    // Comprueba si el usuario existe
-    return this.checkUserExists(email, userType).pipe(
-      switchMap(userExists => {
-        if (userExists) {
-          // Realiza una solicitud POST a la API para autenticar al usuario
-          return this.http.post<any>(`${this.baseURL}/login`, credentials);
-        } else {
-          // Usuario no encontrado
-          return of(null);
-        }
-      })
-    );
-  }
+    login(email: string, password: string, userType: boolean): Observable<any> {
+        // Comprueba si el usuario existe
+        return this.checkUserExists(email, userType).pipe(
+            switchMap((userExists: boolean) => {
+                if (userExists) {
+                    // Usuario encontrado, ahora verifica la contraseña
+                    return this.http.get<any[]>(`${this.baseURL}/users`, {
+                        params: { email },
+                    }).pipe(
+                        map((users: any[]) => {
+                            const user = users.find((u: any) => u.email === email);
+                            if (user.password === password) {
+                                // Contraseña correcta, devuelve el usuario
+                                return user;
+                            } else {
+                                // Contraseña incorrecta
+                                return null;
+                            }
+                        })
+                    );
+                } else {
+                    // Usuario no encontrado
+                    return of(null);
+                }
+            })
+        );
+    }
 
     signup(email: string, password: string, userType: boolean): Observable<any> {
         // Comprueba si el usuario existe antes de intentar registrarlo

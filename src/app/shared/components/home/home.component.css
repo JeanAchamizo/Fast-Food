@@ -24,7 +24,7 @@ header a:hover {
 }
 
 .home {
-  background-image: url('src/assets/images/homepresentacion.jpg');
+  background-image: url('../../../../assets/images/homepresentacion.jpg');
   background-size: cover;
   background-position: center;
   color: #F6EBDD;

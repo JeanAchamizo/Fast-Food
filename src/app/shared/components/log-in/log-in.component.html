@@ -1,6 +1,6 @@
 <div class="login-container">
   <div class="logo-img">
-    <img src="assets/images/logo-no-background.png" alt="logo">
+    <img src="../../../../assets/images/logo-no-background.png" alt="logo">
   </div>
   <h2>Iniciar Sesión</h2>
   <form (ngSubmit)="login()" #loginForm="ngForm">
@@ -24,4 +24,5 @@
     </div>
   </form>
   <div *ngIf="loginError" class="error-message">Credenciales incorrectas. Inténtalo de nuevo.</div>
+  <div *ngIf="userTypeError" class="error-message">Tipo de usuario incorrecto.</div>
 </div>
