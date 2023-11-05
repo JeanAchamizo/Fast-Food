@@ -87,17 +87,5 @@
       "role": "chef",
       "id": 4
     },
-    {
-      "id": "13bfa2f3-8173-4f51-ac9e-ec472f19a620",
-      "email": "nzagalvallejo@gmail.com",
-      "password": "1234",
-      "role": "chef"
-    },
-    {
-      "id": "254e6c41-f152-45dd-ac5a-c48faea00557",
-      "email": "nicozagalv@gmail.com",
-      "password": "123",
-      "role": "cliente"
-    }
   ]
 }

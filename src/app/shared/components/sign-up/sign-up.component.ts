@@ -18,17 +18,22 @@ export class SignUpComponent {
     constructor(private authService: UserService, private router: Router) {}
 
     signup(): void {
-        this.authService.signup(this.email, this.password, this.userType).subscribe(
+       this.authService.signup(this.email, this.password, this.userType).subscribe(
             (user: any) => {
+              if(this.password != this.confirm_password) {
+                this.passwordMismatch = true;
+                console.log('Las contraseñas no coinciden');
+              }else {
                 if (user) {
-                    // Registro exitoso, puedes redirigir al usuario a la página principal
-                    console.log('Registro exitoso');
-                    this.router.navigate(['/login']);
+                  // Registro exitoso, puedes redirigir al usuario a la página principal
+                  console.log('Registro exitoso');
+                  this.router.navigate(['/login']);
                 } else {
-                    // Registro fallido, muestra un mensaje de error
-                    this.signUpError = true;
-                    console.log('El usuario ya existe');
+                  // Registro fallido, muestra un mensaje de error
+                  this.signUpError = true;
+                  console.log('El usuario ya existe');
                 }
+              }
             },
             (error) => {
                 // Manejo de errores, si es necesario
