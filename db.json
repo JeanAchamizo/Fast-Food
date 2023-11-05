@@ -16,23 +16,7 @@
   "profile": {
     "name": "typicode"
   },
-
   "recipes": [
-    {
-      "id": 1,
-      "name": "Papa a la huancaina",
-      "duration": "125",
-      "type": "Saludable",
-      "stars": "5"
-    },
-    {
-      "id": 2,
-      "name": "Lomo Saltado",
-      "photo": "",
-      "duration": "130",
-      "type": "Carnes",
-      "stars": "5"
-    },
     {
       "id": 3,
       "name": "Caldo de Gallina",
@@ -77,13 +61,11 @@
       "stars": "5"
     }
   ],
-
   "users": [
     {
       "id": 1,
       "email": "asdasdasd@dmaf",
       "role": "chef",
-      "username": "usuario1",
       "password": "contrasena1"
     },
     {
@@ -94,45 +76,28 @@
       "role": "cliente"
     },
     {
-      "username": "usuario1",
       "password": "contrasena1",
       "email": "asdasdasd@dmaf",
       "role": "chef",
       "id": 3
     },
     {
-      "username": "usuario1",
       "password": "contrasena1",
       "email": "asdasdasd@dmaf",
       "role": "chef",
       "id": 4
-    }
-  ],
-  "login": [
+    },
     {
-      "username": "abc",
+      "id": "13bfa2f3-8173-4f51-ac9e-ec472f19a620",
+      "email": "nzagalvallejo@gmail.com",
+      "password": "1234",
+      "role": "chef"
+    },
+    {
+      "id": "254e6c41-f152-45dd-ac5a-c48faea00557",
+      "email": "nicozagalv@gmail.com",
       "password": "123",
-      "id": 1
-    },
-    {
-      "username": "usuario1",
-      "password": "contrasena1",
-      "id": 2
-    },
-    {
-      "username": "usuario2",
-      "password": "contrasena2",
-      "id": 3
-    },
-    {
-      "username": "usuario1",
-      "password": "contrasena1",
-      "id": 4
-    },
-    {
-      "username": "usuario1",
-      "password": "contrasena1",
-      "id": 5
+      "role": "cliente"
     }
   ]
 }
