@@ -2,7 +2,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { EventEmitter, Injectable, Output } from '@angular/core';
 import { catchError, Observable, retry, throwError } from 'rxjs';
 import { Recipe } from '../../models/recipe';
-import {environment} from "../../environments/environment";
+import {environment} from "../../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'

@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@types/lodash": "^4.14.199",
+    "firebase": "^10.5.2",
     "json-server": "^0.17.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
