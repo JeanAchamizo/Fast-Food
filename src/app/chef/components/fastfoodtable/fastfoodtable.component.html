@@ -1,3 +1,17 @@
+<form (submit)="onSubmit()" #fastFoodForm='ngForm'>
+  <mat-form-field><input matInput placeholder="Name" name="Name" required [(ngModel)]="fastFoodData.name"></mat-form-field>
+  <mat-form-field><input type="text" matInput placeholder="Duration" name="duration" required [(ngModel)]="fastFoodData.duration"></mat-form-field>
+  <mat-form-field><input type="text" matInput placeholder="Type" name="type" required [(ngModel)]="fastFoodData.type"></mat-form-field>
+  <mat-form-field><input type="text" matInput placeholder="Stars" name="stars" required [(ngModel)]="fastFoodData.stars"></mat-form-field>
+
+  <ng-container *ngIf="isEditMode; else elseTemplate">
+    <button mat-button color="primary">Update</button>&nbsp;
+    <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
+  </ng-container>&nbsp;
+  <ng-template #elseTemplate>
+    <button mat-button color="primary">Add </button>
+  </ng-template>
+</form>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <ng-container matColumnDef="id">
     <th mat-header-cell *matHeaderCellDef> Id. </th>

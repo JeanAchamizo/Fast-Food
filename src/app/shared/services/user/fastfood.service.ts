@@ -40,31 +40,31 @@ export class HttpDataService{
 
   createItem(item: any): Observable<Recipe> {
     return this.http
-      .post<Recipe>(this.base_Url, JSON.stringify(item), this.httpOptions)
+      .post<Recipe>(this.base_Url+'/recipes', JSON.stringify(item), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 
   getList(): Observable<Recipe> {
     return this.http
-      .get<Recipe>(this.base_Url)
+      .get<Recipe>(this.base_Url+'/recipes')
       .pipe(retry(2), catchError(this.handleError));
   }
 
   getItem(id: string): Observable<Recipe> {
     return this.http
-      .get<Recipe>(this.base_Url + '/' + id).pipe(retry(2),catchError(this.handleError));
+      .get<Recipe>(this.base_Url + '/recipes/' + id).pipe(retry(2),catchError(this.handleError));
   }
 
   updateItem(id: string, item: any): Observable<Recipe> {
     return this.http
-      .put<Recipe>(this.base_Url + '/' + id, JSON.stringify(item),   this.httpOptions
+      .put<Recipe>(this.base_Url + '/recipes/' + id, JSON.stringify(item),   this.httpOptions
       )
       .pipe(retry(2), catchError(this.handleError));
   }
 
   deleteItem(id: string): Observable<Recipe> {
     return this.http
-      .delete<Recipe>(`${this.base_Url}/${id}`, this.httpOptions )
+      .delete<Recipe>(`${this.base_Url}/recipes/${id}`, this.httpOptions )
       .pipe(retry(2), catchError(this.handleError));
   }
 

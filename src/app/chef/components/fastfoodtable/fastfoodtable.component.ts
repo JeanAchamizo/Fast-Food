@@ -101,6 +101,8 @@ export class FastfoodtableComponent {
     } else {
       console.log('Invalid data');
     }
+
+
   }
 
 

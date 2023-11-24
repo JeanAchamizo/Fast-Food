@@ -1,6 +1,6 @@
 .mat-toolbar{
   background-color: #111113;
-  position: fixed;
+
 }
 
 .mat-toolbar .mat-toolbar-row {
@@ -19,4 +19,5 @@
 .logo{
   color: #F6EBDD;
 }
+
 
