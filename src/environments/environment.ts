@@ -1,6 +1,6 @@
 export const environment = {
 
   production: false,
-  baseURL: 'http://localhost:3000/recipes'
+  baseURL: 'https://fastfoodapi-production.up.railway.app/recipes'
 
 };

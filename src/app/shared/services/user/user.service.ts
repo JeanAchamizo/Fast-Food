@@ -10,7 +10,7 @@ import { v4 } from 'uuid';
   providedIn: 'root'
 })
 export class UserService {
-  private baseURL = 'http://localhost:3000'; // Reemplaza con la URL de tu API
+  private baseURL = 'https://fastfoodapi-production.up.railway.app'; // Reemplaza con la URL de tu API
 
   constructor(private http: HttpClient) {}
 
