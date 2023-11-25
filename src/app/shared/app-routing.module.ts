@@ -4,7 +4,7 @@ import {HomeComponent} from "./components/home/home.component";
 import {FastfoodtableComponent} from "../chef/components/fastfoodtable/fastfoodtable.component";
 import {LogInComponent} from "./components/log-in/log-in.component";
 import {SignUpComponent} from "./components/sign-up/sign-up.component";
-
+import {CardComponent} from "../customer/components/card/card.component";
 
 const routes: Routes = [
 
@@ -12,6 +12,7 @@ const routes: Routes = [
   {path: 'login', component: LogInComponent},
   {path: 'home',  component: HomeComponent},
   {path: 'table', component: FastfoodtableComponent},
+  {path: 'card', component: CardComponent},
   {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
 

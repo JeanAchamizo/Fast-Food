@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+// @ts-ignore
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -19,6 +20,8 @@ export class HeaderComponent {
   fastFoodTable() {
     this.router.navigateByUrl('/table');
   }
-
+  fastFoodCard() {
+    this.router.navigateByUrl('/card');
+  }
 
 }
