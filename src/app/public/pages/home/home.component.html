@@ -1,0 +1,43 @@
+<body class="home" style="">
+
+  <div class="hero-content">
+    <h1>Bienvenido a nuestra Página</h1>
+    <p>Descubre experiencias únicas</p>
+    <a href="#seccion-destacada" class="btn">Contactanos</a>
+  </div>
+
+
+  <div class="about-content">
+    <div class="text-container">
+      <h1>NOSOTROS</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit,<br>
+        sociosqu suscipit interdum vestibulum aptent imperdiet, natoque vel egestas neque arcu dui. <br>
+        <br>
+        Tempus conubia volutpat dictumst facilisi molestie lacinia cursus cras porta,<br>
+        in phasellus condimentum auctor sodales ultricies feugiat nostra natoque, <br> nulla dictum urna sed suscipit elementum<br>
+        <br>
+        vivamus etiam. Dui ante tortor vestibulum integer vulputate placerat consequat, vitae molestie <br>
+        aliquam egestas risus varius eget justo, <br> pretium est vehicula inceptos eleifend gravida.
+      </p>
+    </div>
+  <img src="../../../../assets/images/about.jpg" alt="About us img" class="about-img">
+  </div>
+
+
+  <cdk-carousel>
+    <cdk-carousel-item *ngFor="let image of images">
+      <img [src]="image" alt="About us img" class="about-img">
+    </cdk-carousel-item>
+  </cdk-carousel>
+
+
+  <mat-toolbar class="app-footer text-center">
+    <div>
+      <span>Copyright &copy; 2024 Vascon Technologies LLC, All rights reserved.</span>
+      <span>Developed by VasconGroup</span>
+    </div>
+  </mat-toolbar>
+</body>
+
+
+

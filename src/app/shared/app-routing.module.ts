@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {HomeComponent} from "./components/home/home.component";
-import {FastfoodtableComponent} from "../chef/components/fastfoodtable/fastfoodtable.component";
-import {LogInComponent} from "./components/log-in/log-in.component";
-import {SignUpComponent} from "./components/sign-up/sign-up.component";
-import {CardComponent} from "../customer/components/card/card.component";
+import {HomeComponent} from "../public/pages/home/home.component";
+import {ContactComponent} from "../public/pages/contact/contact.component";
+import {AboutUsComponent} from "../public/pages/about-us/about-us.component";
+import {ServicesComponent} from "../public/pages/services/services.component";
+import {ProjectsComponent} from "../public/pages/projects/projects.component";
+
 
 const routes: Routes = [
 
-  {path: 'signup', component: SignUpComponent},
-  {path: 'login', component: LogInComponent},
   {path: 'home',  component: HomeComponent},
-  {path: 'table', component: FastfoodtableComponent},
-  {path: 'card', component: CardComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'login'},
+  {path: 'contact',  component: ContactComponent},
+  {path: 'aboutUs',  component: AboutUsComponent},
+  {path: 'services',  component: ServicesComponent},
+  {path: 'projects',  component: ProjectsComponent},
+  {path: '', pathMatch: 'full', redirectTo: 'home'},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
 
 ];

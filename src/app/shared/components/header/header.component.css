@@ -1,23 +1,38 @@
-.mat-toolbar{
-  background-color: #111113;
-
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 10px; /* Agregamos un poco de espacio alrededor del contenido */
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); /* Agregamos una sutil sombra */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.mat-toolbar .mat-toolbar-row {
-  justify-content: flex-end;
+.logo-img {
+  height: 50px;
+  width: auto; /* Para mantener la proporción original de la imagen */
+  margin-left: 50px;
 }
 
-.mat-toolbar .example-spacer {
-  flex: 1;
+.menu-option {
+  color: #000;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease; /* Agregamos la transición de color */
+  margin-right: 20px; /* Espaciado entre opciones del menú */
+  text-decoration: none; /* Quitamos la decoración de texto por defecto para que no aparezca el subrayado al inicio */
 }
 
-.mat-toolbar button {
-  margin-left: 8px;
-  color: #F6EBDD;
+.menu-option:hover {
+  border-bottom: 2px solid #000;
+  color: #333; /* Cambiamos el color al pasar el mouse para indicar que es interactivo */
 }
 
-.logo{
-  color: #F6EBDD;
+.fixed-toolbar + .content {
+  margin-top: 64px; /* Ajusta según la altura de tu barra de herramientas */
 }
-
 
