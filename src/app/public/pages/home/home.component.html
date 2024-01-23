@@ -23,13 +23,7 @@
   <img src="../../../../assets/images/about.jpg" alt="About us img" class="about-img">
   </div>
 
-
-  <cdk-carousel>
-    <cdk-carousel-item *ngFor="let image of images">
-      <img [src]="image" alt="About us img" class="about-img">
-    </cdk-carousel-item>
-  </cdk-carousel>
-
+  <app-carousel></app-carousel>
 
   <mat-toolbar class="app-footer text-center">
     <div>
@@ -37,6 +31,7 @@
       <span>Developed by VasconGroup</span>
     </div>
   </mat-toolbar>
+
 </body>
 
 

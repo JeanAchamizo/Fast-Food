@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule, } from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms'
 
+
+
 @NgModule({
   imports: [
     MatButtonModule,
@@ -30,7 +32,8 @@ import { FormsModule } from '@angular/forms'
     FormsModule
 
     ,BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+
   ],
   exports: [
     MatButtonModule,
@@ -44,10 +47,8 @@ import { FormsModule } from '@angular/forms'
     MatFormFieldModule,
     MatInputModule,
     MatChipsModule,
-    FormsModule
-
-
-    ,BrowserAnimationsModule,
+    FormsModule,
+    BrowserAnimationsModule,
     MatSidenavModule
   ]
 })

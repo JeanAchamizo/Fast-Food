@@ -7,7 +7,7 @@ body.home {
 }
 
 .hero-content {
-  background-image: url('hero.jpg');
+  background-image: url('../../../../assets/images/hero.jpg');
   background-size: cover;
   background-position: center;
   color: #000;
@@ -75,7 +75,9 @@ body.home {
   margin-right: 150px;
 }
 
+
 .app-footer {
+  margin-top: 60px;
   background-color: #fff;
   color: #808080;
   text-align: center;
@@ -91,3 +93,5 @@ body.home {
 .mat-icon:hover {
   color: #3498db;
 }
+
+
