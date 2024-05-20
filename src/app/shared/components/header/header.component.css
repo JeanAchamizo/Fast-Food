@@ -16,7 +16,17 @@ mat-toolbar {
   height: 50px;
   width: auto; /* Para mantener la proporción original de la imagen */
   margin-left: 50px;
+  filter: none; /* No aplicar filtro por defecto */
 }
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .logo-img {
+    clip-path: inset(0 65% 0 0); /* Mostrar solo la primera cuarta parte de la imagen */
+    filter: hue-rotate(-10deg) saturate(150%); /* Ajustar el color para que sea más rojo */
+  }
+}
+
 
 .menu-option {
   color: #000;

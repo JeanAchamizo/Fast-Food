@@ -1,38 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastFood</title>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="/public/assets/styles/style.css">
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!--usar recursos de boxicons-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!--usar recursos de remixicons-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
 <body class="home" style="">
+<!--home seccion-->
+<section class="home" id="home">
+  <div class="content">
+    <h3>FastFood</h3>
+    <p>Rapidez en Acción, Calidad en Recomendacion</p>
+    <button class="read-more-button">Leer Más</button>
+    <button class="download-button">Ir a pagina</button>
+  </div>
+</section>
 
-  <div class="hero-content">
-    <h1>Bienvenido a nuestra Página</h1>
-    <p>Descubre experiencias únicas</p>
-    <a href="#seccion-destacada" class="btn">Contactanos</a>
+<section class="AboutUs bg-[#FFA500] p-20">
+  <div class="text-black text-center">
+    <h1 class="text-[48px] font-extrabold p-10">Acerca de</h1>
+    <p class="text-[18px] flex flex-col h-full py-10">En FastFood, creemos en la eficiencia, la calidad y la rapidez. Nuestra plataforma está diseñada para conectar a personas que necesitan soluciones culinarias con expertos y proveedores confiables, todo en un solo lugar. Ya sea que estés buscando recetas para problemas en tu cocina, oportunidades laborales como chef o proveedores de ingredientes esenciales, estamos aquí para brindarte la mejor experiencia culinaria.
+    </p>
+
+    <ul class="image-list flex flex-row flex-wrap">
+      <li class="w-full md:w-1/2 lg:w-1/4 p-4">
+        <img src="../../../../assets/images/AboutUs_Soluciones_Rapidas.png" alt="">
+        <h2>Soluciones Rápidas</h2>
+        <p>proceso de encontrar recetas y expertos culinarios calificados para resolver problemas culinarios de manera eficiente y en tiempo récord.</p>
+      </li>
+
+      <li class="w-full md:w-1/2 lg:w-1/4 p-4">
+        <img src="../../../../assets/images/AboutUs_OportunidadesLaborales.png" alt="">
+        <h2>Comparte tus recestas</h2>
+        <p>
+          Conectamos a usuarios con ingredientes de cocina y expertos culinarios que ofrecen sus servicios, creando oportunidades laborales constantes y promoviendo el crecimiento profesional en el ámbito culinario.
+        </p>
+      </li>
+
+      <li class="w-full md:w-1/2 lg:w-1/4 p-4">
+        <img src="../../../../assets/images/AboutUs_SuministrosEsenciales.png" alt="">
+        <h2>Apoyamos tu esfuerzo</h2>
+        <p>
+          Ofrecemos una puerta de entrada para proveedores de ingredientes y suministros culinarios, permitiéndoles llegar a una audiencia dedicada y apoyar a los profesionales del sector, así como a los entusiastas de la cocina.
+
+        </p>
+      </li>
+
+      <li class="w-full md:w-1/2 lg:w-1/4 p-4">
+        <img src="../../../../assets/images/AboutUs_24x7Disponible.png" alt="">
+        <h2>Podras encontrarnos cuando nos necesites</h2>
+        <p>
+          FastFood está disponible las 24 horas del día, los 7 días de la semana, para que puedas acceder a recetas, inspiración culinaria y oportunidades cuando más las necesites.
+        </p>
+      </li>
+    </ul>
+    <div></div>
+  </div>
+</section>
+
+<section class="bg-[#ffff] md:py-2" id = "services">
+  <div>
+    <h2 class="text-5xl text-center p-10 text-black">Nuestros Servicios</h2>
+    <div class="flex justify-center mb-20">
+      <span class="w-1/3 h-1 bg-[#e11661]"></span>
+      <span class="w-1/3 h-1 bg-[#4CAF50]"></span>
+    </div>
+
   </div>
 
-
-  <div class="about-content">
-    <div class="text-container">
-      <h1>NOSOTROS</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit,<br>
-        sociosqu suscipit interdum vestibulum aptent imperdiet, natoque vel egestas neque arcu dui. <br>
-        <br>
-        Tempus conubia volutpat dictumst facilisi molestie lacinia cursus cras porta,<br>
-        in phasellus condimentum auctor sodales ultricies feugiat nostra natoque, <br> nulla dictum urna sed suscipit elementum<br>
-        <br>
-        vivamus etiam. Dui ante tortor vestibulum integer vulputate placerat consequat, vitae molestie <br>
-        aliquam egestas risus varius eget justo, <br> pretium est vehicula inceptos eleifend gravida.
-      </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-14 text-white mx-14 text-center">
+    <div class="">
+      <img src="../../../../assets/images/img-cliente.png" alt="imagen de un cliente" class="m-auto">
+      <div>
+        <h3 class="text-2xl text-center py-8 text-black font-bold">Clientes</h3>
+        <p class="text-black">
+          ¿Necesitas inspiración culinaria o ayuda para solucionar problemas en la cocina? Encuentra recetas y consejos de chefs expertos que te brindarán soluciones culinarias eficientes y deliciosas. Con FastFood, tus necesidades culinarias están en buenas manos.
+        </p>
+        <button class="bg-[#E53E3E] rounded-lg py-3 px-14 my-10">
+          <a href="#">Explorar</a>
+        </button>
+      </div>
     </div>
-  <img src="../../../../assets/images/about.jpg" alt="About us img" class="about-img">
+    <div class="">
+      <img src="../../../../assets/images/img-experto.png" alt="imagen de un experto" class="m-auto">
+      <div>
+        <h3 class="text-2xl text-center py-8 text-black font-bold">Expertos</h3>
+        <p class="text-black">
+          ¿Eres un chef o experto culinario en busca de una plataforma para compartir tus habilidades culinarias y recibir pagos por tus tutoriales? FastFood es el lugar ideal para expandir tu alcance y compartir tu pasión por la cocina con una audiencia dedicada. Con FastFood, tu crecimiento profesional está en buenas manos.
+        </p>
+        <button class="bg-[#E53E3E] rounded-lg py-3 px-14 my-10">
+          <a href="#">Explorar</a>
+        </button>
+      </div>
+    </div>
   </div>
+</section>
 
-  <app-carousel></app-carousel>
-
-  <mat-toolbar class="app-footer text-center">
-    <div>
-      <span>Copyright &copy; 2024 Vascon Technologies LLC, All rights reserved.</span>
-      <span>Developed by VasconGroup</span>
+<section class="p-0" id="contact">
+  <div class="bg-[#FFA500] relative isolate h-80 flex items-center justify-center lg:flex lg:items-center lg:static lg:px-28">
+    <div class="contact-content"> <!-- Contenedor adicional -->
+      <h2 class="text-3xl text-center text-white font-bold bg-black bg-opacity-60 rounded-3xl flex items-center h-1/2 lg:bg-transparent lg:text-black lg:text-6xl lg:text-center lg:fonto-bold lg:mr-36">
+        ¿Tienes alguna pregunta? ¡Contáctanos!
+        ¡Nos enorgullece decir que hemos superado la marca de los 5,000 usuarios registrados!
+      </h2>
+      <!-- Agregué la clase bg-cover para que la imagen cubra todo el espacio -->
+      <div class="contact-image">
+        <img src="../../../../assets/images/img-clientes.png" alt="imagen de cliente">
+      </div>
     </div>
-  </mat-toolbar>
+  </div>
+  <!-- ... -->
+</section>
 
 </body>
 
 
-
+</html>

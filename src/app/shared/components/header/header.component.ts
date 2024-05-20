@@ -26,19 +26,11 @@ export class HeaderComponent {
     this.router.navigateByUrl('/home');
 
   }
-  aboutUs() {
-    this.router.navigateByUrl('/table');
-
+  recetas() {
+    this.router.navigateByUrl('/recetas');
   }
-  services() {
-    this.router.navigateByUrl('/card');
 
-  }
-  contact() {
-    this.router.navigateByUrl('/card');
-
-  }
-  projects() {
-    this.router.navigateByUrl('/card');
+  addReceta() {
+    this.router.navigateByUrl('/add-receta');
   }
 }
