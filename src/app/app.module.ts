@@ -17,6 +17,7 @@ import { ServicesComponent } from "./public/pages/services/services.component";
 import { AboutUsComponent } from "./public/pages/about-us/about-us.component";
 import {NgOptimizedImage} from "@angular/common";
 import { CarouselComponent } from "./public/components/carousel/carousel.component";
+import {FastfoodtableComponent} from "./public/components/fastfoodtable/fastfoodtable.component";
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { CarouselComponent } from "./public/components/carousel/carousel.compone
     AboutUsComponent,
     CarouselComponent,
     FooterComponent,
+    FastfoodtableComponent,
   ],
   imports: [
     BrowserModule,

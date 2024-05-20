@@ -24,7 +24,6 @@ export class HeaderComponent {
 
   home() {
     this.router.navigateByUrl('/home');
-
   }
   recetas() {
     this.router.navigateByUrl('/recetas');
