@@ -1,5 +1,8 @@
 # Fastfood
 
+![image](https://github.com/JeanAchamizo/Fast-Food/assets/102640048/404e50b3-d461-461f-9d3c-15116a5a6334)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
 
 ## Development server
