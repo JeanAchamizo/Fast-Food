@@ -18,6 +18,7 @@ import { AboutUsComponent } from "./public/pages/about-us/about-us.component";
 import {NgOptimizedImage} from "@angular/common";
 import { CarouselComponent } from "./public/components/carousel/carousel.component";
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,8 +29,8 @@ import { CarouselComponent } from "./public/components/carousel/carousel.compone
     ProjectsComponent,
     ServicesComponent,
     AboutUsComponent,
-    CarouselComponent
-
+    CarouselComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,6 @@ import { CarouselComponent } from "./public/components/carousel/carousel.compone
     RouterModule,
     MatSlideToggleModule,
     NgOptimizedImage,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
